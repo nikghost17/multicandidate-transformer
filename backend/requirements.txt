@@ -1,0 +1,33 @@
+# ── Django & REST ─────────────────────────────────────────────────────────────
+django>=4.2
+djangorestframework>=3.15
+django-cors-headers>=4.3
+
+# ── Core utilities ────────────────────────────────────────────────────────────
+pydantic>=2.0
+rapidfuzz>=3.0
+requests>=2.31
+python-dotenv>=1.0
+phonenumbers>=8.13          # E.164 phone normalisation
+
+# ── LangChain ecosystem ───────────────────────────────────────────────────────
+langchain>=0.3
+langchain-google-genai>=2.0        # Gemini LLM + text-embedding-004
+langchain-community>=0.3           # PDF / DOCX / TXT loaders
+langchain-huggingface>=0.1         # HuggingFace local embeddings
+
+# ── Document loading ──────────────────────────────────────────────────────────
+PyMuPDF>=1.24                      # PDF text extraction
+pdfplumber>=0.10                   # Table extraction from PDFs
+docx2txt>=0.8                      # DOCX loading
+
+# ── Embeddings (local, free) ──────────────────────────────────────────────────
+sentence-transformers>=3.0         # all-MiniLM-L6-v2
+
+# ── MongoDB ───────────────────────────────────────────────────────────────────
+pymongo>=4.6
+certifi>=2024.0                    # TLS CA bundle for MongoDB Atlas
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest>=7.0
+pytest-django>=4.8
